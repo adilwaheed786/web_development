@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#"  AutoEventWireup="true" CodeBehind="Shooping.master.cs" Inherits="Shopping.Shooping" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    
+    <title> E-Commerce </title>
+    <script src="bootstrap/javascript/scrolltotop.js"></script>
+    <script src="bootstrap/sweetalert.min.js"></script>
+   <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>--%>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <%-- Custom css--%>
+    <link href="CSS/cst.css" rel="stylesheet" />
+   <%-- bootsratp cs--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%-- Favicon icon--%>
+    <link rel="shortcut icon" type="image/ico" href="~/images/12.ico">
+    <%-- Datatable cs--%>
+    <link href="datatable/css/jquery.dataTables.min.css" rel="stylesheet" />
+       <%-- javascript --%>
+    <script src="bootstrap/javascript/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/javascript/popper.min.js"></script>
+    <script src="bootstrap/javascript/bootstrap.min.js"></script>
+       <%-- fontawoseme cs--%>
+    <link href="fontawosome/css/all.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:#fff1e1;">
+    <form id="form1" runat="server">
+         <div>            
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand"  href="home.aspx"  >
+                    <i class="fas fa-shopping-cart"style="font-size:30px;color:#fff1e1"></i>
+                </a>
+                <a style="text-decoration:none; color:#fff1e1;font-family:'Times New Roman'" href="home.aspx"  ><b>Online Shopping</b></a>
+             
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.aspx">Home </a>
+      </li>
+         <li class="nav-item active">
+        <a class="nav-link" href="#">About Us </a>
+      </li>
+         <li class="nav-item active">
+        <a class="nav-link" href="termandcondition.aspx">Term And Conditions</a>
+      </li>
+         </ul>
+                    
+                        <ul class="navbar-nav" >
+                        <li class="nav-item active" >
+                            <asp:LinkButton href="AdminLoginpage.aspx" class="nav-link" ID="LinkButton4" runat="server">Admin</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton href="UserLoginPage.aspx" class="nav-link" ID="LinkButton1" runat="server">User Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton href="UserSignUpPage.aspx" class="nav-link" ID="LinkButton2" runat="server">Sign Up</asp:LinkButton>
+                        </li>
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" Visible="False"  CausesValidation="False" OnClick="LinkButton3_Click" PostBackUrl="~/Home.aspx">Logout</asp:LinkButton>
+                        </li>
+ 
+                        <li class="nav-item active">
+                            <asp:LinkButton class="nav-link" ID="LinkButton7" runat="server"> Hello User!!</asp:LinkButton>
+ 
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>  
+        <%--  <div >
+                <h5 class="text-center col-xs-2" style="color:#1d3c45; font-size:22px; background:#f5d6b3; border:1px solid black; border-radius:20px;
+             box-shadow: 1px 3px 4px 2px #1d3c45;">
+                    <b><asp:Label style="text-decoration:none; color:#1d3c45;font-family:'Times New Roman';" ID="Label1" runat="server" Text="Label">
+                        </asp:Label></b>
+                    &nbsp;&nbsp;&nbsp;
+    <asp:Label style="text-decoration:none; color:#1d3c45;font-family:'Times New Roman';" ID="Label2" runat="server" Text="Label"></asp:Label>      
+                </h5>
+          </div>--%>
+       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+     
+            <%--    main content place holder--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+       
+  <%--    main content place holder--%>
+ <%--       <footer>    
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                           
+                            <asp:LinkButton  href="AdminLoginpage.aspx" class="footerlinks" ID="LinkButton6" runat="server">Admin Login</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Author Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
+                             &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
+                            &nbsp;
+                             <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Member Management</asp:LinkButton>
+                        </p>
+                    </div>
+      
+                     </div>  
+  </div>        
+        </footer>--%>
+  <footer>
+            <div class="page-footer bg-dark" style="background-color: #1d3c45!important">  
+             <div class="container text-center text-md-left pt-5" style="color:white">
+             <div class="row">
+                 
+           <div class="col-md-3 mx-auto mb-4">
+           <h5 class="text-uppercase font-weight-bold">Providers</h5> 
+           <hr class="bg-success mb-2 mt-e d-inline-block mx-auto" style="width: 110px; height: 2px">
+           <p class="mt-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et           
+           magna aliqua. Ut enim ad minim veniam.</p>
+           </div>
+           
+           <div class ="col-md-2 mx-auto mb-4 ">
+           <h5 class="text-uppercase font-weight-bold">Products</h5>
+           <hr class="bg-success mb-2 mt-e d-inline-block mx-auto" style="width: 110px; height: 2px">
+           
+           <ul class="list-unstyled">
+                <li class="sy-2"><a style="color:white;text-decoration:none"href="#">HTML 5</a></li>
+                <li class="sy-2"><a style="color:white;text-decoration:none" href="#">CSS 3</a></li>
+                <li class="ey-2"><a style="color:white;text-decoration:none" href="#">Bootstrap 4</a></li>           
+                <li class="sy-2"><a style="color:white;text-decoration:none" href="#">JavaScript</a></li>          
+           </ul>
+              </div>
+
+        <div class ="col-md-2 mx-auto mb-4" >
+           <h5 class="text-uppercase font-weight-bold">services</h5>
+           <hr class="bg-success mb-2 mt-e d-inline-block mx-auto" style="width: 90px; height: 2px">
+                      
+          <ul class="list-unstyled">
+                <li class="sy-2"><a style="color:white;text-decoration:none" href="#">Home</a></li>
+                <li class="sy-2"><a style="color:white;text-decoration:none" href="#">About</a></li>
+                <li class="sy-2"><a style="color:white;text-decoration:none" href="#">Contact Us</a></li>           
+                <li class="sy-2"><a style="color:white;text-decoration:none" href="#">Services</a></li>          
+           </ul>              
+        </div>
+               <div class="col-md-3 mx-auto mb-4">
+                           <h5 class="text -uppercase font-weight-bold">Contact</h5>
+                           <hr class="bg-success mb-2 mt-e d-inline-block mx-auto" style="width: 75px; height: 2px">              
+                           <ul class="list-unstyled"> 
+                                   <li class="wesy"><i class="fa fa-home text-white mr-4 "></i>Karachi, street 3 PK</li>
+                                   <li class="wesy"><i class="fas fa-envelope text-white mr-4"></i>Theprovideriail.com</11>
+                                   <li class="wesy"><i class="fas fa-phone text-white mr-4"></i>+92123456789</li> 
+                                   <li class="wesy"><i class="fas fa-print text-white mr-4"></i>+002233467788</li>              
+                           </ul>             
+               </div>            
+            </div>
+         </div>
+             
+            <div class="footer-copyright text-center py-3"style="color:white;">   
+                <p style="color:white;">&copy All Right Reserved <a href="#" style="text-decoration:none;" >The Provider.com</a></p>
+                  <div class="container">              
+                   <div class="row py-4 d-flex align-items-center">                  
+                   <div class="col-md-12 text-center">
+                   <a href="https://www.facebook.com/"><i class="fab fa-facebook-f text-white mr-4"></i></a>   
+                   <a href="#"><i class="fab fa-snapchat text-white mr-4"></i></a>  
+                   <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a> 
+                   <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a> 
+                   <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>              
+                   <a href="#"><i class="fab fa-linkedin text-white mr-4"></i></a> 
+                   <a href="#"><i class="fab fa-instagram text-white "></i></a>              
+              </div>
+              </div>
+            </div> 
+                <p> Designed By Adil Waheed,Abdullah Iqbal, Rabia Essani</p>
+              
+            </div>
+                </div>
+           </footer>        
+    </form>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</html>

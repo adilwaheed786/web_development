@@ -1,0 +1,28 @@
+.img,.head{
+    text-align: center;
+    color: rgba(119, 0, 255, 0.815);
+}
+.tb{
+    padding: 10px;   
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(119, 0, 255, 0.815);
+    color: white;
+}
+.tk
+{
+    color: rgb(26, 161, 14);
+}
+.success{
+    color: indigo;
+}
+textarea{
+    resize: none;
+}
+.tb1,.btn{
+    text-align: center;
+    padding: 10px;
+}
+.sub{
+    text-align: center;
+}

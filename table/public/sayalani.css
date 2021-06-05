@@ -1,0 +1,130 @@
+*{
+   
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.icon{
+    display: inline;
+    padding: 5px;
+    font-size: 30px;
+}
+.nav{
+    margin: 3px 10px;
+    text-align: center;
+    font-size: 15px;
+    display: inline;
+    
+}
+.icon:hover{
+   
+    color: rgb(255, 255, 255);
+}
+ul.navbar{
+    margin-bottom: -1em;
+   
+}
+.nav:hover{
+    background-color: #215eb3;
+    color: white;
+}
+.nav{
+    padding: 1%;
+    text-align: center;
+    background-color:rgb(253, 253, 253);
+    font-weight:500;
+    border-radius: 50px;
+    
+}
+#box1{
+    background-color: #316DC3;
+        padding-top:1%;
+        
+}
+
+button{
+    border: 2px solid green;
+    color: green;
+    
+}
+.hd{
+    text-align: center;
+    color: white;
+}
+.images{
+    width: 100%;
+}
+div.intro{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    margin: 5px 10px 5px 10px;
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+.intro{
+    color: #316DC3;
+    text-align: center;
+    font-weight: bold;
+}
+.duc{
+    color: #427900;
+}
+marquee{
+    background-color: #316DC3;
+    color: white;
+}
+.text{
+    text-align: justify;
+    font-size: 18.7px;
+}
+#boot{
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.scrollToTop {
+    background: rgba(0, 0, 0, 0.1);
+    bottom: 15px;
+    display: none;
+    height: 50px;
+    padding: 2px;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
+    z-index: 99999;
+    color: black;
+    font-size: 30px;
+}
+
+.col{
+   
+    color: #ffffff;
+   
+}
+.ic{
+    font-size: 30px;
+}
+.f{
+    color: #427900;
+}
+.fac:hover{
+    color: #4267B2;
+}
+.insta:hover{
+    color: rgb(185, 27, 125);
+}
+.yout:hover{
+    color: crimson;
+}
+.twi:hover{
+    color: rgb(0, 183, 255);
+}
+.what:hover{
+    color:#4AC959;
+}

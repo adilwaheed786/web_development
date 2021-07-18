@@ -1,0 +1,50 @@
+.nav-item:hover{
+background-color: rgba(104, 104, 104, 0.986);
+border-radius: 10px;
+} 
+.main{
+    /* background-color: rgba(213, 253, 200, 0.726); */
+    /* background: linear-gradient(to bottom right, #ffffff 0%, #4a4c4e 100%); */
+    background-color: rgba(247, 247, 247, 0.5);
+}
+.card{
+    border: 1px solid rgb(104, 103, 103);
+    /* background-color: rgba(226, 212, 191, 0.788);
+    background: linear-gradient(to top left, #ffffff 0%, #006666 100%);
+    /* background: linear-gradient(to bottom right, #336699 0%, #009999 100%) */
+    /* background: linear-gradient(to bottom right, #669999 0%, #666699 100%);  */
+    /* background: linear-gradient(to bottom left, #2c2c2cd5 33%, #a1a1a1 70%); */
+    /* color:white; */
+}
+.card-title{
+    color:black;
+    /* text-shadow:2px 2px 9px rgb(0, 0, 0); */
+    
+}
+.card{
+    box-shadow:2px 2px 10px rgb(0, 0, 0) ;
+    
+}
+.ic{
+    font-size: 30px;
+    color: white;
+}
+.fac:hover{
+    color: #4267B2;
+}
+.insta:hover{
+    color: rgb(185, 27, 125);
+}
+.yout:hover{
+    color: crimson;
+}
+.twi:hover{
+    color: rgb(0, 183, 255);
+}
+.f{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.foot{
+    list-style-type:none;
+}
